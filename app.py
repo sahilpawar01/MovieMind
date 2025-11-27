@@ -4,10 +4,15 @@ import pickle
 import streamlit as st
 import requests
 
+try:
+    SECRET_STORE = dict(st.secrets)
+except Exception:
+    SECRET_STORE = {}
+
 
 # Fetching movie poster from the api
-TMDB_API_KEY = os.getenv("TMDB_API_KEY", st.secrets.get("TMDB_API_KEY", ""))
-TMDB_BEARER = os.getenv("TMDB_BEARER_TOKEN", st.secrets.get("TMDB_BEARER_TOKEN", ""))
+TMDB_API_KEY = os.getenv("TMDB_API_KEY", SECRET_STORE.get("TMDB_API_KEY", ""))
+TMDB_BEARER = os.getenv("TMDB_BEARER_TOKEN", SECRET_STORE.get("TMDB_BEARER_TOKEN", ""))
 
 
 def fetch_poster(movie_id):
