@@ -1,0 +1,19 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Large local artifacts
+tmdb_5000_movies.csv
+tmdb_5000_credits.csv
+Movies Recommendation System.ipynb
+setup.sh
+Procfile
+
+# OS/editor cruft
+.idea/
+.vscode/
+.env
+*.log
+
