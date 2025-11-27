@@ -1,6 +1,6 @@
 # MovieMind (Streamlit)
 
-Streamlit app that serves movie recommendations generated from pre-computed similarity scores. The build focuses on keeping only the files required at runtime so the repository stays lightweight for cloud deployments (Render, etc.).
+# visit the app -> https://movie-mind-c0nn.onrender.com/
 
 ## Runtime Artifacts
 
