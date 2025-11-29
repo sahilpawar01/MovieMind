@@ -44,6 +44,4 @@ Everything else (raw CSVs, notebooks, virtual environments, setup scripts for ot
 4. Add the environment variables `TMDB_API_KEY` and `TMDB_BEARER_TOKEN` in Render → Environment.
 5. Trigger the first deploy. Subsequent pushes to `main` will redeploy automatically.
 
-## Credits
 
-Original model pipeline inspired by Prashant Kumar / CampusX materials. This repo only contains the assets required to serve the recommender.
